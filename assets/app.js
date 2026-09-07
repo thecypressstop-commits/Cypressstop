@@ -16,11 +16,16 @@ function updateOpenStatus(){
     const val = type => parts.find(p => p.type === type)?.value;
     const day = val('weekday');
     const mins = Number(val('hour')) * 60 + Number(val('minute'));
-    const schedule = {Mon:[240,1320],Tue:[240,1320],Wed:[240,1320],Thu:[240,1320],Fri:[240,1320],Sat:[240,1320],Sun:[270,1260]};
-    const [start,end] = schedule[day] || [0,0];
-    const badge = document.getElementById('openBadge');
-    if(!badge) return;
-    badge.textContent = mins >= start && mins < end ? 'Open now' : 'See hours';
+
+    const applySchedule = (badgeId, schedule) => {
+      const badge = document.getElementById(badgeId);
+      if(!badge) return;
+      const [start,end] = schedule[day] || [0,0];
+      badge.textContent = mins >= start && mins < end ? 'Open now' : 'See hours';
+    };
+
+    applySchedule('openBadge', {Mon:[240,1320],Tue:[240,1320],Wed:[240,1320],Thu:[240,1320],Fri:[240,1320],Sat:[240,1320],Sun:[270,1260]});
+    applySchedule('openBadgeDularge', {Mon:[270,1260],Tue:[270,1260],Wed:[270,1260],Thu:[270,1260],Fri:[270,1260],Sat:[270,1260],Sun:[270,1260]});
   }catch(e){}
 }
 updateOpenStatus();

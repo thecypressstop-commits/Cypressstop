@@ -43,7 +43,10 @@
         "addressRegion":"LA",
         "postalCode":"70363",
         "addressCountry":"US"
-      }
+      },
+      "openingHoursSpecification":[
+        {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"04:30","closes":"21:00"}
+      ]
     }
   ]
   </script>
@@ -232,8 +235,9 @@
             </div>
 
             <div class="hours-card">
-              <div class="hours-title"><h3>Store Hours</h3></div>
-              <small>Call the store to confirm current hours.</small>
+              <div class="hours-title"><h3>Store Hours</h3><span id="openBadgeDularge">Open early</span></div>
+              <div class="hours-row"><span>Every day</span><b>4:30 AM – 9:00 PM</b></div>
+              <small>Holiday hours may vary.</small>
             </div>
 
             <div class="map-wrap">
