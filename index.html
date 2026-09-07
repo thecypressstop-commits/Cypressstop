@@ -4,32 +4,48 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Cypress Stop | Houma, Louisiana</title>
-  <meta name="description" content="Cypress Stop in Houma, Louisiana — fuel, early breakfast, BBQ, plate lunches, convenience, beer, wine and liquor on LA-311." />
+  <meta name="description" content="Cypress Stop in Houma, Louisiana — two locations for fuel, early breakfast, BBQ, plate lunches, convenience, beer, wine and liquor: 3846 Highway 311 and 633 Bayou Dularge Road." />
   <meta name="theme-color" content="#176b45" />
   <meta property="og:title" content="Cypress Stop | Houma, Louisiana" />
-  <meta property="og:description" content="Fuel up. Eat well. Keep moving. Cypress Stop on LA-311 in Houma." />
+  <meta property="og:description" content="Fuel up. Eat well. Keep moving. Two Cypress Stop locations in Houma — 311 and Dularge." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/styles.css" />
   <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":["GasStation","ConvenienceStore"],
-    "name":"Cypress Stop",
-    "telephone":"+1-985-746-5211",
-    "address":{
-      "@type":"PostalAddress",
-      "streetAddress":"3846 LA-311",
-      "addressLocality":"Houma",
-      "addressRegion":"LA",
-      "postalCode":"70360",
-      "addressCountry":"US"
+  [
+    {
+      "@context":"https://schema.org",
+      "@type":["GasStation","ConvenienceStore"],
+      "name":"Cypress Stop – 311",
+      "telephone":"+1-985-746-5211",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"3846 Highway 311",
+        "addressLocality":"Houma",
+        "addressRegion":"LA",
+        "postalCode":"70360",
+        "addressCountry":"US"
+      },
+      "openingHoursSpecification":[
+        {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"04:00","closes":"22:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"04:30","closes":"21:00"}
+      ]
     },
-    "openingHoursSpecification":[
-      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"04:00","closes":"22:00"},
-      {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"04:30","closes":"21:00"}
-    ]
-  }
+    {
+      "@context":"https://schema.org",
+      "@type":["GasStation","ConvenienceStore"],
+      "name":"Cypress Stop – Dularge",
+      "telephone":"+1-985-872-6517",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"633 Bayou Dularge Road",
+        "addressLocality":"Houma",
+        "addressRegion":"LA",
+        "postalCode":"70363",
+        "addressCountry":"US"
+      }
+    }
+  ]
   </script>
 </head>
 <body>
@@ -37,8 +53,8 @@
 
   <div class="utility-bar">
     <div class="container utility-inner">
-      <span>3846 LA-311 • Houma, Louisiana</span>
-      <a href="tel:+19857465211">(985) 746-5211</a>
+      <span>311: <a href="tel:+19857465211">(985) 746-5211</a></span>
+      <span>Dularge: <a href="tel:+19858726517">(985) 872-6517</a></span>
     </div>
   </div>
 
@@ -55,7 +71,7 @@
         <a href="#menu">Menu</a>
         <a href="#store">Store</a>
         <a href="#visit">Visit</a>
-        <a class="nav-cta" href="https://www.google.com/maps/search/?api=1&query=3846+LA-311+Houma+LA+70360" target="_blank" rel="noopener">Directions</a>
+        <a class="nav-cta" href="#visit">Locations</a>
       </nav>
     </div>
   </header>
@@ -70,8 +86,8 @@
           <h1>Fuel up.<br><span>Eat well.</span><br>Keep moving.</h1>
           <p class="hero-lead">More than a gas stop on Highway 311. Cypress Stop serves the morning rush, lunch crowd and everyone in between with hot breakfast, smoked BBQ, plate lunches, cold drinks and a fully stocked convenience store.</p>
           <div class="hero-actions">
-            <a class="btn btn-lime" href="https://www.google.com/maps/search/?api=1&query=3846+LA-311+Houma+LA+70360" target="_blank" rel="noopener">Get Directions</a>
-            <a class="btn btn-outline" href="tel:+19857465211">Call the Store</a>
+            <a class="btn btn-lime" href="#visit">Our Locations</a>
+            <a class="btn btn-outline" href="#visit">Call a Store</a>
           </div>
           <div class="hero-facts">
             <div><strong>Early</strong><span>Breakfast</span></div>
@@ -175,28 +191,55 @@
     </section>
 
     <section class="section visit-section" id="visit">
-      <div class="container visit-grid">
-        <div class="visit-copy">
+      <div class="container">
+        <div class="section-intro centered">
           <p class="eyebrow green">Visit Cypress Stop</p>
-          <h2>Right where you need us.</h2>
-          <p class="visit-lead">3846 LA-311, Houma, LA 70360. An easy stop for the morning commute, lunch run, fuel or supplies on the way out of town.</p>
-
-          <div class="contact-grid">
-            <a class="contact-card" href="tel:+19857465211"><span>☎</span><div><small>Phone</small><strong>(985) 746-5211</strong></div></a>
-            <a class="contact-card" href="https://www.google.com/maps/search/?api=1&query=3846+LA-311+Houma+LA+70360" target="_blank" rel="noopener"><span>📍</span><div><small>Address</small><strong>3846 LA-311<br>Houma, LA 70360</strong></div></a>
-          </div>
-
-          <div class="hours-card">
-            <div class="hours-title"><h3>Store Hours</h3><span id="openBadge">Open early</span></div>
-            <div class="hours-row"><span>Monday – Saturday</span><b>4:00 AM – 10:00 PM</b></div>
-            <div class="hours-row"><span>Sunday</span><b>4:30 AM – 9:00 PM</b></div>
-            <small>Holiday hours may vary.</small>
-          </div>
+          <h2>Two locations. One easy stop.</h2>
+          <p>Pick whichever Cypress Stop is on your way — both are ready with fuel, food and the essentials.</p>
         </div>
 
-        <div class="map-wrap">
-          <iframe title="Map showing Cypress Stop in Houma" src="https://www.google.com/maps?q=3846+LA-311,+Houma,+LA+70360&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=3846+LA-311+Houma+LA+70360" target="_blank" rel="noopener">Open in Maps ↗</a>
+        <div class="locations-grid">
+          <div class="location-card">
+            <h3>Cypress Stop – 311</h3>
+            <p class="visit-lead">3846 Highway 311, Houma, LA 70360</p>
+
+            <div class="contact-grid">
+              <a class="contact-card" href="tel:+19857465211"><span>☎</span><div><small>Phone</small><strong>(985) 746-5211</strong></div></a>
+              <a class="contact-card" href="https://www.google.com/maps/search/?api=1&query=3846+Highway+311+Houma+LA+70360" target="_blank" rel="noopener"><span>📍</span><div><small>Address</small><strong>3846 Highway 311<br>Houma, LA 70360</strong></div></a>
+            </div>
+
+            <div class="hours-card">
+              <div class="hours-title"><h3>Store Hours</h3><span id="openBadge">Open early</span></div>
+              <div class="hours-row"><span>Monday – Saturday</span><b>4:00 AM – 10:00 PM</b></div>
+              <div class="hours-row"><span>Sunday</span><b>4:30 AM – 9:00 PM</b></div>
+              <small>Holiday hours may vary.</small>
+            </div>
+
+            <div class="map-wrap">
+              <iframe title="Map showing Cypress Stop 311 in Houma" src="https://www.google.com/maps?q=3846+Highway+311,+Houma,+LA+70360&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=3846+Highway+311+Houma+LA+70360" target="_blank" rel="noopener">Open in Maps ↗</a>
+            </div>
+          </div>
+
+          <div class="location-card">
+            <h3>Cypress Stop – Dularge</h3>
+            <p class="visit-lead">633 Bayou Dularge Road, Houma, LA 70363</p>
+
+            <div class="contact-grid">
+              <a class="contact-card" href="tel:+19858726517"><span>☎</span><div><small>Phone</small><strong>(985) 872-6517</strong></div></a>
+              <a class="contact-card" href="https://www.google.com/maps/search/?api=1&query=633+Bayou+Dularge+Road+Houma+LA+70363" target="_blank" rel="noopener"><span>📍</span><div><small>Address</small><strong>633 Bayou Dularge Road<br>Houma, LA 70363</strong></div></a>
+            </div>
+
+            <div class="hours-card">
+              <div class="hours-title"><h3>Store Hours</h3></div>
+              <small>Call the store to confirm current hours.</small>
+            </div>
+
+            <div class="map-wrap">
+              <iframe title="Map showing Cypress Stop Dularge in Houma" src="https://www.google.com/maps?q=633+Bayou+Dularge+Road,+Houma,+LA+70363&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=633+Bayou+Dularge+Road+Houma+LA+70363" target="_blank" rel="noopener">Open in Maps ↗</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -209,8 +252,8 @@
           <p>Gas. Breakfast. BBQ. Plate lunches. Cold drinks. One easy stop on 311.</p>
         </div>
         <div class="cta-actions">
-          <a class="btn btn-lime" href="https://www.google.com/maps/search/?api=1&query=3846+LA-311+Houma+LA+70360" target="_blank" rel="noopener">Get Directions</a>
-          <a class="btn btn-outline" href="tel:+19857465211">Call Cypress Stop</a>
+          <a class="btn btn-lime" href="#visit">Get Directions</a>
+          <a class="btn btn-outline" href="#visit">Call Cypress Stop</a>
         </div>
       </div>
     </section>
@@ -218,16 +261,17 @@
 
   <footer>
     <div class="container footer-grid">
-      <div class="footer-brand"><div class="footer-logo-wrap"><img src="assets/cypress-stop-logo.webp" alt="Cypress Stop logo" /></div><p>Fuel, food and local convenience on LA-311 in Houma, Louisiana.</p></div>
+      <div class="footer-brand"><div class="footer-logo-wrap"><img src="assets/cypress-stop-logo.webp" alt="Cypress Stop logo" /></div><p>Fuel, food and local convenience at two locations in Houma, Louisiana.</p></div>
       <div><h4>Explore</h4><a href="#food">Food</a><a href="#menu">Menu</a><a href="#store">Store</a><a href="#visit">Visit</a></div>
-      <div><h4>Contact</h4><a href="tel:+19857465211">(985) 746-5211</a><a href="https://www.google.com/maps/search/?api=1&query=3846+LA-311+Houma+LA+70360" target="_blank" rel="noopener">3846 LA-311, Houma</a></div>
+      <div><h4>Cypress Stop – 311</h4><a href="tel:+19857465211">(985) 746-5211</a><a href="https://www.google.com/maps/search/?api=1&query=3846+Highway+311+Houma+LA+70360" target="_blank" rel="noopener">3846 Highway 311, Houma</a></div>
+      <div><h4>Cypress Stop – Dularge</h4><a href="tel:+19858726517">(985) 872-6517</a><a href="https://www.google.com/maps/search/?api=1&query=633+Bayou+Dularge+Road+Houma+LA+70363" target="_blank" rel="noopener">633 Bayou Dularge Road, Houma</a></div>
     </div>
     <div class="footer-bottom"><div class="container"><span>© <span id="year"></span> Cypress Stop. All rights reserved.</span><span>Website built by <a href="https://www.completelocalsites.com/" target="_blank" rel="noopener">CompleteLocalSites.com</a></span></div></div>
   </footer>
 
   <div class="mobile-actions">
-    <a href="tel:+19857465211">☎<span>Call</span></a>
-    <a href="https://www.google.com/maps/search/?api=1&query=3846+LA-311+Houma+LA+70360" target="_blank" rel="noopener">➤<span>Directions</span></a>
+    <a href="#visit">☎<span>Call</span></a>
+    <a href="#visit">➤<span>Directions</span></a>
     <a href="#menu">🍽<span>Food</span></a>
   </div>
 
